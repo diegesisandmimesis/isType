@@ -2,9 +2,13 @@
 // isType.h
 //
 
-
 #ifndef IS_TYPE_H
 #define IS_TYPE_H
+
+// If we have an existing isType macro we're going to replace it.
+#ifdef isType
+#undef isType
+#endif // isType
 
 // Utility define for testing an object to see if it is an instance of some
 // class
